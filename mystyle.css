@@ -1,0 +1,198 @@
+/* Basic CSS reset */
+*,
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+}
+/* ------Theme style ------- */
+
+.theme_page{
+    font-family: Arial, Helvetica, sans-serif;  
+    color: #333333;
+    background-color: #ffffff;
+}
+ 
+.theme_element_backgroundcolor{
+    background-color: #f7d8aa;
+}
+
+/* -------- Page header and nav --------- */
+.page_header{
+    margin: 15px 0;
+}
+
+.page_navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_element{
+    text-decoration: none;
+    color: #333333;
+}
+
+.navigation_element:hover{
+    opacity: 0.7;
+}
+
+/* ------- prodcut image ------ */
+.product_image{
+max-width: 100%;
+}
+
+/* -------- offer text ------ */
+.offer{
+    width: 80%;
+    height: 3.5rem;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 16px;
+}
+
+/* ------- Ingredients section ------ */
+.ingredients_section{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.ingredients_heading{
+    margin-bottom: 5px;
+}
+
+.nutrition_table{
+    margin: 25px auto 40px;
+    width: 80%;
+    border: black 1px solid;
+}
+
+.nutrition_table_td{
+    text-align: right;
+}
+
+/* ------ Quality and cards ------ */
+.quality_section{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.quality_flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quality_heading{
+    margin-bottom: 5px;
+}
+
+.card{
+    border: 1px solid black;
+    width: 12.5rem;
+    height: 12.5rem; 
+    margin-bottom: 30px;
+}
+
+.card_heading{
+    margin-bottom: 5px;
+}
+
+.card_content{
+    padding: 16px 16px;
+}
+
+.card_top_blue{
+    height: 44px;
+    background-color: #3354a5;
+}
+
+.card_top_brown{
+    height: 44px;
+    background-color: #e3af66;
+}
+
+.card_top_grey{
+    height: 44px;
+    background-color: #ececec;
+}
+
+.card_top_lightbrown{
+    height: 44px;
+    background-color: #f7d8aa;
+}
+
+/* ------ page footer and its sections ----- */
+.some_image{
+    width: 32px;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.page_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15.625rem;
+}
+
+.page_footer_address{
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 37.5rem){
+
+    .page_footer{
+        flex-direction: row;
+        height: 12.5rem;
+    }
+.page_footer_section{
+    height:8.75rem;
+}
+
+.quality_flexbox{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.offer{
+    font-size: 1.7rem;
+    padding-top: 13px;
+}
+
+}
+
+@media only screen and (min-width: 53.438rem) {
+    .ingredients_section,
+    .quality_section{
+        width: 50%;
+    }
+
+
+
+.page_navigation{
+    justify-content: flex-end;
+}
+
+.navigation_element{
+    margin-left: 15px;
+}
+.quality_flexbox{
+    justify-content: space-between;
+}
+}
