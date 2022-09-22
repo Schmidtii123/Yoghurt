@@ -1,140 +1,373 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da" class="html">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoghurt</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/css/mystyle.css">
-    
+    <link rel="icon" type="image/x-icon" href="/img/1.png"> <!-- fane billede -->
 </head>
 
-<body class="theme_page">
-    <div class="wrapper">
-    
-<header class="page_header">
-<nav class="page_navigation">
-<a href="#ingredients" class="navigation_element">Ingredients</a>
-<a href="#quality" class="navigation_element">Quality</a>
-<a href="#contact" class="navigation_element">Contact</a>
+<body>
 
-</nav>
+
+<!-- Burgermenu -->
+<div class="sidenav"> </div> <!-- sort sidebar -->
+
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="https://dokk1.dk/besoeg-dokk1/aabningstider" target="_blank"><li>Åbningstider</li></a>
+      <a href="https://dokk1.dk/det-sker/arrangementer" target="_blank"><li>Det sker på Dokk1</li></a>
+      <a href="https://dokk1.dk/biblioteket" target="_blank"><li>Bibliotek</li></a>
+      <a href="https://dokk1.dk/borgerservice" target="_blank"><li>Borgerservice</li></a>
+      <a href="https://dokk1.dk/besoeg-dokk1" target="_blank"><li>Besøg Dokk1</li></a>
+      <a href="https://dokk1.dk/hvem-bor-her" target="_blank"><li>Hvem bor her</li></a>
+      <a href="https://dokk1.dk/om-dokk1" target="_blank"><li>Om Dokk1</li></a>
+      <a href="https://dokk1.dk/english" target="_blank"><li>English</li></a>
+    </ul>
+  </div>
+
+
+
+
+
+
+<!-- HEADER / NAVIGATION -->
+<header>
+        <div class="header">
+            <h1 class="h11">
+                <a href="https://dokk1.dk/" class="link_forside"> <span class="dokk_farve">DOKK</span><span class="et_tal">1</span></a> <!-- span for at farve DOKK1 -->
+            </h1>
+            <h2><a href="https://dokk1.dk/det-sker/arrangementer" class=top_link>Det sker på Dokk1</a> </h2> 
+            <h2><a href="https://dokk1.dk/biblioteket" class=top_link>Bibliotek </a> </h2>
+            <h2><a href="https://dokk1.dk/borgerservice" class=top_link>Borgerservice </a> </h2>
+            <h2><a href="https://dokk1.dk/besoeg-dokk1" class=top_link>Besøg Dokk1 </a> </h2>
+            <h2><a href="https://dokk1.dk/hvem-bor-her" class=top_link>Hvem bor her </a> </h2>
+            <h2><a href="https://dokk1.dk/om-dokk1" class=top_link>Om Dokk1 </a> </h2>
+            <h2><a href="https://dokk1.dk/english" class=top_link>English </a> </h2>  
+            
+        </div>
+
 </header>
 
-<main>
-<img src="img/yoghurt.jpg" alt="yoghurt product image"
-class="product_image">
-<h1 class="offer theme_element_backgroundcolor">Buy one. Get three!</h1>
-
-<section class="ingredients_section" id="ingredients">
-<h2 class="ingredients_heading">Ingredients</h2>
-<p>skimmed milk, strawberries (8,5%), rhubarb (5.0%), corn starch,
-    sweetener (asoartame which is a phenylalanine source), yoghurt
-culture, vitamins, probiotics
-</p>
-
-<table class="nutrition_table">
-<caption>Nutritional centent per 100 g</caption>
-
-<tr>
-   <td>Energy</td>
-   <td class="nutrition_table_td">167 KJ</td>
-</tr>
-
-<tr>
-   <td>Fat</td>
-   <td class="nutrition_table_td">10.1 g</td>
-</tr>
-
-<tr>
-    <td>Carbohydrate</td>
-    <td class="nutrition_table_td">5.5 g</td>
-</tr>
-
-<tr>
-    <td>Fiber</td>
-    <td class="nutrition_table_td">0.2 g</td>
-    </tr>
-
-<tr>
-    <td>Protein</td>
-    <td class="nutrition_table_td">33 g</td>
-    </tr>
-</table>
-</section>
-
-<section class="quality_section" id="quality">
-<h2 class="quality_heading">Product quality</h2>
-<div class="quality_flexbox">
-<div class="card">
-<div class="card_top_blue"></div>
-<div class="card_content">
-<h3 class="card_heading">Your intestines</h3>
-<p>Our yogurt contains active living bacteria known as 
-    probiotic, which can keep your intestines healthy.</p>
+<div class="hero">
+    <div>
+  <h1 class="overskrift">Studierum</h1>
 </div>
 </div>
 
-<div class="card">
-    <div class="card_top_grey"></div>
-    <div class="card_content">
-    <h3 class="card_heading">Vitamins</h3>
-    <p>Our yogurt can contribute to your daily intake of 
-        calcium and vitamins like b6 and b12.</p>
-    </div>
+<article>
+
+<!-- ----------------------------
+INDLEDENDE TESKT
+----------------------------- -->
+    <div class="fireds--bodyl">
+        <div class="fields--body-item"></div>
+        <p>På Dokk1 er der seks studierum, som kan bookes. Studierummene er indrettet til små grupper, der vil sidde
+            uforstyrret og læse, skrive, tale sammen eller arbejde. <br>
+            <br>
+            <p> Det kræver login at booke et studierum.</p>
     </div>
 
-<div class="card">
-        <div class="card_top_brown"></div>
-        <div class="card_content">
-        <h3 class="card_heading">Sugar</h3>
-        <p>Our yogurt is low on sugar compared to other
-            products.</p>
-        </div>
-        </div>
+<!-- ----------------------------
+INFORMATION 
+----------------------------- -->
+    <div class="information">
 
-    <div class="card">
-        <div class="card_top_lightbrown"></div>
-        <div class="card_content">
-        <h3 class="card_heading">Fat</h3>            
-        <p>Our yogurt is low on fat compared to other
-            products.</p>
-            </div>
-            </div>
-</div> <!--End of the flexbox-->
+        <h3 class="info_overskrift"> Information </h3>
+        <p>
+            Studierummene kan bookes af studerende til møder i mindre klubber og foreninger; til folk,
+            der træner sprog sammen, til læsekredse eller til andre aktiviteter, der kræver fordybelse. <br>
+            <br>
+            Lokalet kan bookes i tidsintervaller, som varer 2-3 timer af gangen. Hver person kan booke ét <br>
+            tidsinterval pr. dag. En gruppe på tre kan booke to timer hver, så de i alt kan bruge rummet i
+            seks timer. Der kan kun bookes tid i ét studierum per dag. <br>
+            <br>
+            Hvis det reserverede studierum ikke er taget i brug indenfor 15 minutter, kan andre frit overtage
+            rummet. <br>
+            <br>
+            Studierummene kan bookes én måned frem. Kalenderen viser via. farvekoden, om der er lokaler ledige
+            på den pågældende dag. Når man klikker på en dag i kalenderen, kan man se de frie tider. <br>
+            <br>
+            I tilfælde af at man ikke kan møde op til sin booking, bedes man aflyse sin booking, så andre kan
+            nå at springe til. Man får en påmindelse på mail dagen før man har booket en tid i studielokalet. <br>
+        </p>
+    </div>
+    <button class="button">Log ind</button>
 
-</section>
-
-</main>
+ <!-- ---------------------------
+  FARVEKODER TIL KALENDER 
+  ---------------------------- -->
+  
+  <div class="farvekoder">
+    <p> <span class="dot" id="green_dot"></span> Ledig </p>
+    <p> <span class="dot" id="yellow_dot"></span> Mindst én tid er booket </p>
+    <p> <span class="dot" id="grey_dot"></span> Fuldt booket </p>
+    <p> <span class="dot" id="white_dot"></span> Ikke tilgængelig </p>
 </div>
 
-<footer class="page_footer theme_element_backgroundcolor">
-  <section class="page_footer_section" id="contact">
-      <h4>Contact us</h4>
-      <address class="page_footer_address">
-      Yogurtman Inc. <br>
-      Activity Street 101 <br>
-      46352 Noname city <br>
-      Denmark <br>
-      Tel. 564 765 746 <br>
-      contact@yogurtman.dk <br>
- </address>
-</section>
 
-<section class="page_footer_section">
-    <h4>Follow us</h4>
-<a href="http://www.twitter.com"><img src="img/2021 Twitter logo - blue.png" class="some_image" alt="twitter_logo"></a>
-<a href="http://www.instagram.com"><img src="img/Instagram_Glyph_Black.png" class="some_image" alt="instagram_logo"></a>
-<a href="http://www.facebook.com"><img src="img/f_logo_RGB-Blue_58.png" class="some_image" alt="facebook_logo"></a>    
-</section>
 
- 
+<!---Kalender--->
+<style>
+    * {box-sizing: border-box;}
+    ul {list-style-type: none;}
+    body {font-family: Verdana, sans-serif;}
     
+    .month {
+      padding: 10px 25px;
+      width: 100%;
+      background: #1a5483;
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .month ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .month ul li {
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .month .prev {
+      float: left;
+      padding-top: 10px;
+    }
+    
+    .month .next {
+      float: right;
+      padding-top: 10px;
+    }
+    
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color: #ddd;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; 
+    }
+    
+    .weekdays li {
+      display: inline-block;
+      color: #666;
+      text-align: center;
+      
+    }
+    
+    .days {
+      padding: 10px 0;
+      background: #eee;
+      margin: 0;
+    }
+    
+    .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size:12px;
+      color: #777;
+    }
+    
+    .days li .active {
+      padding: 5px;
+      background: #666;
+      color: white !important
+    }
+    
+    /* Add media queries for smaller screens */
+    @media screen and (max-width:720px) {
+      .weekdays li, .days li {width: 13.1%;}
+    }
+    
+    @media screen and (max-width: 420px) {
+      .weekdays li, .days li {width: 12.5%;}
+      .days li .active {padding: 2px;}
+    }
+    
+    @media screen and (max-width: 290px) {
+      .weekdays li, .days li {width: 2.2%;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="month">      
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>
+          Oktober<br>
+          <span style="font-size:18px">2022</span>
+        </li>
+      </ul>
+    </div>
+    
+    <ul class="weekdays">
+      <li>Uge</li> 
+      <li>Mandag</li>
+      <li>Tirsdag</li>
+      <li>Onsdag</li>
+      <li>Torsdag</li>
+      <li>Fredag</li>
+      <li>Lørdag</li>
+      <li>Søndag</li>
+    </ul>
+    
+    <ul class="days">  
+      <li>39</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>1</li>
+      <li>2</li>
+      <li>40</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li><span class="active">7</span></li>
+      <li>8</li>
+      <li>41</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>42</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>43</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>44</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li>
+      
+      
 
+      
+    </ul>
+    
+    </body>
+    </html>
+    <html>
+<head>
+
+<!-- ----------------------------
+KONTAKTOPLYSNINGER
+----------------------------- -->
+    <div class="kontakt">
+        <h3 class="kontakt_overskrift"> Kontaktoplysninger </h3>
+        <p>
+            Hvis man har problemer med booke, slette booking igen, eller lign. bedes man foretage en telefonisk
+            henvendelse til biblioteket på tlf. 8940 9200: <br>
+            <br>
+
+            <ul class="kontakt_liste">
+                <!-- bullet point -->
+                <li> Mandag - onsdag kl. 09.00 - 16.00. </li>
+                <li> Torsdag kl. 09.00 - 18.00. </li>
+                <li> Fredag kl. 09.00 - 16.00. </li>
+                <li> Lørdag og søndag: Lukket. </li>
+            </ul>
+
+            <br>
+            E-mail: <a href="mailto"> dokk1-hvedbiblioteket@aarhus.dk </a>
+        </p>
+    </div>
+
+</article>
+
+<!---Footer--->
+<footer>
+    <div class="hele_footer">
+        <div class="footer_img">
+           
+            <h2 class="f_overskrift"> Find os på </h2>
+        
+            <a href="https://www.facebook.com/dokk1aarhus/?fref=ts"><img src="/img/facebook_logo.png" class="some_img" alt="facebook"><span class="some_tekst">Facebook</span></a> <!-- alt gør, at hvis billedet ikke kan vises, står i stedet den tekst -->
+        
+            <a href="https://www.instagram.com/dokk1aarhus/" ><img src="/img/instagram_black.png" class="some_img" alt="Instagram"><span class="some_tekst">Instagram</span></a>
+            
+            <a href="https://www.youtube.com/channel/UCt83Qq6DcsTbzD5qKdGZtYg/videos"><img src="/img/youtube.png" class="some_img" alt="Youtube"><span class="some_tekst">Youtube</span></a>
+            <br>
+
+        </div>
+
+        <div>
+            <h2 class="f_overskrift">Åbningstider</h2>
+            <br>
+            <p id="fed_i_footer">I dag er bygningen åben fra 08:00-22:00</p>
+            <br>
+            <p>Bibliotek er betjent fra 10:00 - 19:00,<br>
+                og Borgerservice kræver tidsbetilling. </p>
+            <br>
+            <a href="https://dokk1.dk/besoeg-dokk1/aabningstider" class="orange_tekst">Se alle åbningstider</a>
+
+        </div>
+        <div>
+        <h2 class="f_overskrift">Kontakt og adresse</h2>
+        <br>
+        <p>Dokk1</p>
+        <p>Hack Kampmanns Plads 2</p>
+        <p>8000 Århus C</p>
+        <br>
+        <a href="tel: " class="orange_tekst">+45 89 40 92 00</a>
+        <br>
+        <a href="dokk1-hovedbiblioteket@aarhus.dk" class="orange_tekst">dokk1-hovedbiblioteket@aarhus.dk</a>
+        <br>
+        <a href="https://www.was.digst.dk/dokk1-dk" class="orange_tekst">Tilgængelighedserklæring</a>
+        </div>
+
+    </div>
 </footer>
-</body></html>
 
 
 
+</body>
 
+</html>
 
